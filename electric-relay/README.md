@@ -15,7 +15,7 @@ Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de v
 
 ## Hardware Eletrônicos
 
-[Voltar ínicio](#index)
+[Voltar início](#index)
 
 Item | Imagem | Item | Imagem
 :------------------------: | :------------------------: | :------------------------: | :------------------------: |  
@@ -27,7 +27,7 @@ Item | Imagem | Item | Imagem
 
 ## IDE Arduino
 
-[Voltar ínicio](#index)
+[Voltar início](#index)
 
 ### Tutorial para configurar IDE Arduino no VSCode
 
@@ -53,6 +53,20 @@ Item | Imagem | Item | Imagem
 2. Ir em Gerenciar bibliotecas
 3. Pesquisar e instalar `Sinric` de Boris Jaeger
 4. Confirmar a instalação das dependências automaticamente: `ArduinoJson e WebSockets`
+
+<a id="sinric"></a>
+
+## Sinric Pro
+
+[Voltar início](#index)
+
+O Sinric Pro é um serviço de Cloud (nuvem) para dispositivos inteligentes, onde ele suporta uma série de dispositivos inteligentes que podemos criar e integrar a ele (até 3 gratuitamente)
+
+1. Criar uma conta no [Sinric](https://portal.sinric.pro/register)
+2. Cadastrar [dispositivos](https://portal.sinric.pro/device/list) com o nome que serão invocados pela Alexa
+3. Preencher nome, descrição (pra facilitar a organização/identificação) e tipo switch (on/off)
+4. Anotar o `ID` de cada dispositivo cadastrado para colocar no código fonte da placa
+5. Anotar a chave e a credencial para colocar no código fonte da placa, obtidos na aba [Credenciais](https://portal.sinric.pro/credential/list)
 
 ## Referência
 
