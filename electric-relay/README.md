@@ -118,6 +118,8 @@ Circuito de prototipação
 
 [Voltar início](#index)
 
+No aplicativo Alexa ou no controle da Fire Stick TV com o comando: "- Alexa, ligue lâmpada / Alexa desligue lâmpada"
+
 ## Referência
 
 [Automação Residencial com Alexa (Amazon) e NodeMCU](https://blog.eletrogate.com/automacao-residencial-com-alexa-amazon-e-nodemcu/)
