@@ -102,14 +102,15 @@ Agora os dispositivos podem ser controlados através do microfone no aplicativo 
 4. Alterar (ou não) o GPIO da placa `ǸodeMCU`
 5. Enviar o firmware para a placa definindo `Show board config` (no rodapé do VSCode) como Generic ESP8266, selecionando porta USB da placa e conceder permissão de escrita na porta USB `sudo a+rw /dev/tty/USB0` (somente Ubuntu)
 
-
-
 <a id="circuit"></a>
 
 ## Circuito
 
 [Voltar início](#index)
 
+Circuito de prototipação
+
+![image](resources/proto.png)
 
 <a id="use"></a>
 
