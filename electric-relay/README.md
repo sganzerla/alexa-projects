@@ -1,5 +1,7 @@
 # :electric_plug: electric-relay
 
+[Voltar](https://github.com/sganzerla/alexa-projects)
+
 Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de voz da Alexa, para ligar dois relés elétricos um para ligar uma lâmpada e outro para ligar um ventilador.
 
 <a id="index"></a>
@@ -79,6 +81,8 @@ O Sinric Pro é um serviço de Cloud (nuvem) para dispositivos inteligentes, ond
 3. Pesquisar, instalar e fazer login: `Sinric Pro`
 4. Dentro do Sinric Pro clicar em `Descobrir dispositivos`
 5. Criar um grupo e adicionar os dispositivos criados para manter organizado os items
+
+Agora os dispositivos podem ser controlados através do microfone no aplicativo no celular, por um controle Fire Stick, um Echo Dot, etc...
 
 ## Referência
 
