@@ -4,7 +4,7 @@ Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de v
 
 <a id="index"></a>
 
-## :card_index: Requisitos
+## :card_index: Índice de Requisitos
 
 - [Hardware Eletrônicos e Elétricos](#hardware)
 - [Arduino IDE com biblioteca p/ subir o firmware na placa](#ide)
@@ -29,17 +29,30 @@ Item | Imagem | Item | Imagem
 
 [Voltar ínicio](#index)
 
-Tutorial para configurar IDE Arduino no VSCode
+### Tutorial para configurar IDE Arduino no VSCode
 
 1. Baixar a IDE Arduino na página oficial
 2. Descompactar dentro da pasta `/opt` (somente Ubuntu)
 3. Dar permissão de escrita na pasta `/opt` (somente Ubuntu)
 4. Instalar o plugin Arduino no VSCode feito pela Microsoft
-5. Configurar o path da extensão do Arduino no VSCode `/opt/arduino-x/` (Ubuntu) e `local instalado` (Windows)
+5. Configurar o path da extensão do Arduino no VSCode `/opt/nome-pasta/` (Ubuntu) e `local instalado` (Windows)
 6. Reinstalar plugin Arduino no VSCode
 7. Conceder permissão de escrita na porta USB `sudo a+rw /dev/tty/USB0` (somente Ubuntu)
 
+### Habilitar placas ESP8266 na IDE Arduino
 
+1. Abrir IDE Arduino
+2. Colar url dentro de preferências de gerenciadores de placas `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
+3. Ir em gerenciadores de placas, procurar e instalar `esp8266 by Community`
+4. Abrir VSCode com qualquer arquivo `.ino`
+5. Clicar na aba `show board config` no rodapé e escolher `Generic ESP8266`
+
+### Instalar biblioteca Sinric Pro
+
+1. Abrir IDE Arduino
+2. Ir em Gerenciar bibliotecas
+3. Pesquisar e instalar `Sinric` de Boris Jaeger
+4. Confirmar a instalação das dependências automaticamente: `ArduinoJson e WebSockets`
 
 ## Referência
 
