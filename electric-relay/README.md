@@ -68,6 +68,18 @@ O Sinric Pro é um serviço de Cloud (nuvem) para dispositivos inteligentes, ond
 4. Anotar o `ID` de cada dispositivo cadastrado para colocar no código fonte da placa
 5. Anotar a chave e a credencial para colocar no código fonte da placa, obtidos na aba [Credenciais](https://portal.sinric.pro/credential/list)
 
+<a id="alexa"></a>
+
+## Alexa
+
+[Voltar início](#index)
+
+1. Instalar aplicativo Alexa e criar uma conta.
+2. Abrir a aba `Dispositivos` no rodapé direito e ativar `Skils de casa inteligente`
+3. Pesquisar, instalar e fazer login: `Sinric Pro`
+4. Dentro do Sinric Pro clicar em `Descobrir dispositivos`
+5. Criar um grupo e adicionar os dispositivos criados para manter organizado os items
+
 ## Referência
 
 [Automação Residencial com Alexa (Amazon) e NodeMCU](https://blog.eletrogate.com/automacao-residencial-com-alexa-amazon-e-nodemcu/)
