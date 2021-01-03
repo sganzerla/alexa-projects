@@ -2,16 +2,16 @@
 
 [Voltar](https://github.com/sganzerla/alexa-projects)
 
-Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de voz da Alexa, para ligar dois relés elétricos um para ligar uma lâmpada e outro para ligar um ventilador.
+Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de voz da Alexa para ligar dois relés elétricos: um para uma lâmpada e outro para um ventilador.
 
 <a id="index"></a>
 
 ## :card_index: Índice de Requisitos
 
-- [Hardware Eletrônicos e Elétricos](#hardware)
-- [Arduino IDE com biblioteca p/ subir o firmware na placa](#ide)
-- [Conta Sinric Pro](#sinric)
-- [Alexa (App Alexa no Android ou IOS, Controle Amazon Fire Stick, Amazon Echo Dot)](#alexa)
+- [Hardware](#hardware)
+- [Arduino IDE](#ide)
+- [Sinric Pro](#sinric)
+- [Alexa](#alexa)
 
 ## :bulb: Como reproduzir/usar
 
@@ -21,15 +21,15 @@ Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de v
   
 <a id="hardware"></a>
 
-## Hardware Eletrônicos
+## Hardware
 
 [Voltar início](#index)
 
 Item | Imagem | Item | Imagem
 :------------------------: | :------------------------: | :------------------------: | :------------------------: |  
  1 Protoboard pequena (Somente para prototipagem) | ![image](https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png) | 4 Cabos de conexão (Somente para prototipagem) | ![image](https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png)
- 2 LED 5V  (Somente para prototipagem)| ![image](https://user-images.githubusercontent.com/22710963/103470252-f64d9700-4d4e-11eb-908e-9c8fcf4fcd8c.png) | NodeMCU ESP8266 |  ![image](https://user-images.githubusercontent.com/22710963/79626592-9e5ef980-8107-11ea-8245-9ef23642a350.png)
- Relé SPDT 2 canais | ![image](https://user-images.githubusercontent.com/22710963/103469260-4c1b4280-4d41-11eb-90bb-0120b21ff696.png) | 1 tomada macho, 2 tomadas fêmeas e 2 metros de fio p/ fazer uma extensão  |  ![image](https://user-images.githubusercontent.com/22710963/103470387-8fc97880-4d50-11eb-9ab1-98e7a7c6170b.png)
+ 2 LED 5V  (Somente para prototipagem)| ![image](https://user-images.githubusercontent.com/22710963/103470252-f64d9700-4d4e-11eb-908e-9c8fcf4fcd8c.png) | 1 NodeMCU ESP8266 |  ![image](https://user-images.githubusercontent.com/22710963/79626592-9e5ef980-8107-11ea-8245-9ef23642a350.png)
+ 1 Relé SPDT 2 canais | ![image](https://user-images.githubusercontent.com/22710963/103469260-4c1b4280-4d41-11eb-90bb-0120b21ff696.png) | 1 tomada macho, 2 tomadas fêmeas e 2 metros de fio p/ fazer uma extensão  |  ![image](https://user-images.githubusercontent.com/22710963/103470387-8fc97880-4d50-11eb-9ab1-98e7a7c6170b.png)
 
 <a id="ide"></a>
 
@@ -37,6 +37,7 @@ Item | Imagem | Item | Imagem
 
 [Voltar início](#index)
 
+Instruções com as bibliotecas p/ subir o firmware na placa.
 ### Tutorial para configurar IDE Arduino no VSCode
 
 1. Baixar a IDE Arduino na página oficial
@@ -92,10 +93,11 @@ Agora os dispositivos podem ser controlados através do microfone no aplicativo 
 
 <a id="code"></a>
 
-## Código
+## Código Fonte
 
 [Voltar início](#index)
 
+0. Código fonte está disponível [aqui](code/code.ino).
 1. Preencher `WIFI_SSID` e `WIFI_PASS` com o nome da rede e senha wifi 2.4Ghz respectivamente
 2. Preencher `APP_KEY` e `APP_SECRET`  com as credenciais obtidas em [Credenciais](https://portal.sinric.pro/credential/list)
 3. Preencher `Lan_ID` o ID gerado para cada dispositivo pelo [Sinric](https://portal.sinric.pro/device/list)
@@ -118,7 +120,11 @@ Circuito de prototipação
 
 [Voltar início](#index)
 
-No aplicativo Alexa ou no controle da Fire Stick TV com o comando: "- Alexa, ligue lâmpada / Alexa desligue lâmpada"
+No aplicativo Alexa ou no controle da Fire Stick TV com o comando de voz:
+
+"- Alexa, ligue lâmpada / Alexa desligue lâmpada"
+
+O comando deve ser de acordo com o nome do dispositivo cadastrado no Sinric Pro.
 
 ## Referência
 
