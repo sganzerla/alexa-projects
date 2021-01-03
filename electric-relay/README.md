@@ -13,6 +13,12 @@ Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de v
 - [Conta Sinric Pro](#sinric)
 - [Alexa (App Alexa no Android ou IOS, Controle Amazon Fire Stick, Amazon Echo Dot)](#alexa)
 
+## :bulb: Como reproduzir/usar
+
+- [Código Fonte](#code)
+- [Circuito](#circuit)
+- [Como Usar](#use)
+  
 <a id="hardware"></a>
 
 ## Hardware Eletrônicos
@@ -83,6 +89,33 @@ O Sinric Pro é um serviço de Cloud (nuvem) para dispositivos inteligentes, ond
 5. Criar um grupo e adicionar os dispositivos criados para manter organizado os items
 
 Agora os dispositivos podem ser controlados através do microfone no aplicativo no celular, por um controle Fire Stick, um Echo Dot, etc...
+
+<a id="code"></a>
+
+## Código
+
+[Voltar início](#index)
+
+1. Preencher `WIFI_SSID` e `WIFI_PASS` com o nome da rede e senha wifi 2.4Ghz respectivamente
+2. Preencher `APP_KEY` e `APP_SECRET`  com as credenciais obtidas em [Credenciais](https://portal.sinric.pro/credential/list)
+3. Preencher `Lan_ID` o ID gerado para cada dispositivo pelo [Sinric](https://portal.sinric.pro/device/list)
+4. Alterar (ou não) o GPIO da placa `ǸodeMCU`
+5. Enviar o firmware para a placa definindo `Show board config` (no rodapé do VSCode) como Generic ESP8266, selecionando porta USB da placa e conceder permissão de escrita na porta USB `sudo a+rw /dev/tty/USB0` (somente Ubuntu)
+
+
+
+<a id="circuit"></a>
+
+## Circuito
+
+[Voltar início](#index)
+
+
+<a id="use"></a>
+
+## Como Usar
+
+[Voltar início](#index)
 
 ## Referência
 
