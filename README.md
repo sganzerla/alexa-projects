@@ -4,7 +4,7 @@ Repositório para armazenar projetos utizando o SDK da assistente pessoal da Ama
 
 Projeto  | Descrição | Imagem/Vídeo
 :------------------------------: | :----------------------------------------------------:| :----------------------------------------------------:
-[:electric_plug: Electric-relay](electric-relay/) | Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de voz da Alexa para ligar dois relés elétricos: um para uma lâmpada e outro para um ventilador. | ![image](https://user-images.githubusercontent.com/22710963/103471352-2486a300-4d5e-11eb-9824-490558a2d3fe.png)
+[:electric_plug: Electric-relay](electric-relay/) | Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de voz da Alexa para ligar dois relés elétricos: um para uma lâmpada e outro para um ventilador. | [![Vídeo](https://user-images.githubusercontent.com/22710963/103487794-b4702f80-4de6-11eb-85a9-b59c4e123290.png)](https://youtu.be/COXu_XXIfiE)
 
 ## :closed_book: Referências
 
