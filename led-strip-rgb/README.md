@@ -1,10 +1,9 @@
-# :electric_plug: electric-relay
+# :high_brightness: led-strip-rgb
 
 [Voltar](https://github.com/sganzerla/alexa-projects)
 
-Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de voz da Alexa para ligar dois relés elétricos: um para uma lâmpada e outro para um ventilador.
+Este projeto utiliza uma fita de led rgb (não endereçados) e transforma em um dispositivo IOT que pode ligar e desligar as cores sendo controlado pelos comandos de voz da Alexa.
 
-[![Vídeo](https://user-images.githubusercontent.com/22710963/103487794-b4702f80-4de6-11eb-85a9-b59c4e123290.png)](https://youtu.be/COXu_XXIfiE)
 
 <a id="index"></a>
 
@@ -29,9 +28,8 @@ Este projeto cria um dispositivo IOT que pode ser controlado pelos comandos de v
 
 Item | Imagem | Item | Imagem
 :------------------------: | :------------------------: | :------------------------: | :------------------------: |  
- 1 Protoboard pequena (Somente para prototipagem) | ![image](https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png) | 4 Cabos de conexão (Somente para prototipagem) | ![image](https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png)
- 2 LED 5V  (Somente para prototipagem)| ![image](https://user-images.githubusercontent.com/22710963/103470252-f64d9700-4d4e-11eb-908e-9c8fcf4fcd8c.png) | 1 NodeMCU ESP8266 |  ![image](https://user-images.githubusercontent.com/22710963/79626592-9e5ef980-8107-11ea-8245-9ef23642a350.png)
- 1 Relé SPDT 2 canais | ![image](https://user-images.githubusercontent.com/22710963/103469260-4c1b4280-4d41-11eb-90bb-0120b21ff696.png) | 1 tomada macho, 2 tomadas fêmeas e 2 metros de fio p/ fazer uma extensão  |  ![image](https://user-images.githubusercontent.com/22710963/103470387-8fc97880-4d50-11eb-9ab1-98e7a7c6170b.png)
+ 1 Protoboard pequena (Somente para prototipagem) | ![image](https://user-images.githubusercontent.com/22710963/77499362-a8574a80-6e30-11ea-9744-a15c3206fd50.png) | Cabos de conexão (Somente para prototipagem) | ![image](https://user-images.githubusercontent.com/22710963/77499606-5662f480-6e31-11ea-96fd-9e268dceb50f.png)
+ 1 NodeMCU ESP8266 |  ![image](https://user-images.githubusercontent.com/22710963/79626592-9e5ef980-8107-11ea-8245-9ef23642a350.png) | 1m de fita de led rgb | ![image](https://user-images.githubusercontent.com/22710963/103602181-1a91ab00-4eea-11eb-9c78-c7e2ffe70b61.png)
 
 <a id="ide"></a>
 
@@ -71,7 +69,7 @@ Instruções com as bibliotecas p/ subir o firmware na placa.
 
 [Voltar início](#index)
 
-O Sinric Pro é um serviço de Cloud (nuvem) para dispositivos inteligentes, onde ele suporta uma série de dispositivos inteligentes que podemos criar e integrar a ele (até 3 gratuitamente)
+O Sinric Pro é um serviço de Cloud (nuvem) para dispositivos inteligentes, onde ele suporta uma série de dispositivos inteligentes que podemos criar e integrar a ele (até 3 gratuitamente). Neste projeto cada cor da fita vai ser um dispositivo diferente (RED, GREEN e BLUE)
 
 1. Criar uma conta no [Sinric](https://portal.sinric.pro/register)
 2. Cadastrar [dispositivos](https://portal.sinric.pro/device/list) com o nome que serão invocados pela Alexa
@@ -114,7 +112,7 @@ Agora os dispositivos podem ser controlados através do microfone no aplicativo 
 
 Circuito de prototipação
 
-![image](resources/proto.png)
+
 
 <a id="use"></a>
 
@@ -124,7 +122,7 @@ Circuito de prototipação
 
 No aplicativo Alexa ou no controle da Fire Stick TV com o comando de voz:
 
-"- Alexa, ligue lâmpada / Alexa desligue lâmpada"
+"- Alexa, ligue luz vermelha / Alexa ligue luz verde"
 
 O comando deve ser de acordo com o nome do dispositivo cadastrado no Sinric Pro.
 
