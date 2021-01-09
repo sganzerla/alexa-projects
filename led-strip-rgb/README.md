@@ -115,7 +115,7 @@ Agora os dispositivos podem ser controlados através do microfone no aplicativo 
 
 Circuito de prototipação
 
-[image](resources/RGBLED.png)
+![image](resources/RGBLED.png)
 
 <a id="use"></a>
 
