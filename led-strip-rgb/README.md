@@ -4,6 +4,8 @@
 
 Este projeto utiliza uma fita de led rgb (não endereçados) e transforma em um dispositivo IOT que pode ligar e desligar as cores sendo controlado pelos comandos de voz da Alexa.
 
+:----------------------------------------------------: | :----------------------------------------------------:| :----------------------------------------------------:
+![20210108_222602](https://user-images.githubusercontent.com/22710963/104080178-5471f280-5205-11eb-8fc3-07cf7b281fc6.jpg) | ![20210108_222625](https://user-images.githubusercontent.com/22710963/104080207-7b302900-5205-11eb-8b55-0308c238aa8f.jpg) | ![20210108_222657](https://user-images.githubusercontent.com/22710963/104080210-7e2b1980-5205-11eb-81b8-a670612dec7f.jpg)
 
 <a id="index"></a>
 
@@ -46,7 +48,7 @@ Instruções com as bibliotecas p/ subir o firmware na placa.
 4. Instalar o plugin Arduino no VSCode feito pela Microsoft
 5. Configurar o path da extensão do Arduino no VSCode `/opt/nome-pasta/` (Ubuntu) e `local instalado` (Windows)
 6. Reinstalar plugin Arduino no VSCode
-7. Conceder permissão de escrita na porta USB `sudo chmod a+rw /dev/tty/USB0` (somente Ubuntu)
+7. Conceder permissão de escrita na porta USB `sudo usermod a+rw /dev/tty/USB0` (somente Ubuntu)
 
 ### Habilitar placas ESP8266 na IDE Arduino
 
@@ -112,7 +114,7 @@ Agora os dispositivos podem ser controlados através do microfone no aplicativo 
 
 Circuito de prototipação
 
-
+[image](resources/RGBLED.png)
 
 <a id="use"></a>
 
